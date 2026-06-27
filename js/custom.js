@@ -48,7 +48,9 @@ $(function(){
 });
 
 /* start preloader */
-$(window).load(function(){
-	$('.preloader').fadeOut(1000); // set duration in brackets    
+$(document).ready(function(){
+	setTimeout(function() {
+		$('.preloader').fadeOut(500); // set duration in brackets    
+	}, 300);
 });
 /* end preloader */
